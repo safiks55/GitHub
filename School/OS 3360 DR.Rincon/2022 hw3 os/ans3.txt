@@ -1,0 +1,18 @@
+Alphabet:
+Character: D, Code: 1000100, Frequency: 1
+Character: R, Code: 1010010, Frequency: 3
+Character: ., Code: 0101110, Frequency: 1
+Character:  , Code: 0100000, Frequency: 4
+Character: I, Code: 1001001, Frequency: 1
+Character: N, Code: 1001110, Frequency: 2
+Character: C, Code: 1000011, Frequency: 1
+Character: O, Code: 1001111, Frequency: 2
+Character: S, Code: 1010011, Frequency: 4
+Character: A, Code: 1000001, Frequency: 1
+Character: Y, Code: 1011001, Frequency: 1
+Character: :, Code: 0111010, Frequency: 1
+Character: U, Code: 1010101, Frequency: 1
+Character: L, Code: 1001100, Frequency: 1
+Character: E, Code: 1000101, Frequency: 1
+
+Decompressed message: DR. RINCON SAYS: OS RULES
