@@ -53,6 +53,7 @@ void Split_String(string str, int n, vector<string> &test)
         test.push_back(temp);
     }
 }
+// function for adding the zero padding to the converter binary number
 string add_zeros(string result, int numzeros, int x)
 {
 
@@ -68,6 +69,7 @@ string add_zeros(string result, int numzeros, int x)
     }
     return result;
 }
+// function to convert decimals to a binary using a fixed bitsize
 string Dec_to_Bin(int bitsize, int decimal)
 {
     int num_zeros;
@@ -89,6 +91,7 @@ string Dec_to_Bin(int bitsize, int decimal)
     }
     return dec;
 }
+// function to find frequency of a binary number in the message
 int find_frequency(string str, int *b_size, string *str2)
 {
     int counter = 0;
@@ -102,6 +105,7 @@ int find_frequency(string str, int *b_size, string *str2)
     return counter;
 }
 
+// function for thread part 1
 void *dummy(void *input)
 {
     struct temp1 *t = (struct temp1 *)input;
@@ -133,7 +137,7 @@ void *dummy(void *input)
 
     return NULL;
 }
-
+// function for thread part 2
 void *dummy2(void *input)
 {
     struct temp2 *t2 = (struct temp2 *)input;
@@ -171,6 +175,7 @@ int main()
     string num;
     int n; // number of characters in the input
     int bitsize; // represents the bitsize for binary numbers
+    // input variables
     char alphabet;
     string decimal;
     string message;
@@ -217,6 +222,7 @@ int main()
     Split_String(message, size, msg); // split the msg acc to bitsize and store it in a string vector
     int turn = 0;
     //************************************************************ thread part 1 *********************************************************************//
+    //Creating n child threads to determine the binary code and their frequency in the message
     string converted_bins[n]; // store the converted bin values from threads
     s.dec_to_bin = &dec_to_bin;
     s.cond = &cond;
@@ -269,6 +275,7 @@ int main()
     // for(int i = 0; i<v2.size(); i ++) { cout << "From main " << v2[i] << endl;}
     turn = 0;
     //************************************************************ thread part 2 *********************************************************************//
+    //Create m child processes or threads to determine each character of the decompressed message
     string *finalOutput = new string[n2]; // storing the decoded message from threads
     t.cond2 = &cond2;
     t.turn = &turn;

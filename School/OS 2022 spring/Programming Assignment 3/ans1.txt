@@ -1,0 +1,6 @@
+Alphabet:
+Character: a, Code: 010, Frequency: 3
+Character: b, Code: 100, Frequency: 1
+Character: c, Code: 101, Frequency: 3
+
+Decompressed message: aaabccc

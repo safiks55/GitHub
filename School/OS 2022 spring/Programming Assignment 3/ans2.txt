@@ -1,0 +1,16 @@
+Alphabet:
+Character: C, Code: 0000, Frequency: 2
+Character: O, Code: 0001, Frequency: 1
+Character: S, Code: 0010, Frequency: 2
+Character:  , Code: 0011, Frequency: 3
+Character: 3, Code: 0100, Frequency: 2
+Character: 6, Code: 0101, Frequency: 1
+Character: 0, Code: 0110, Frequency: 2
+Character: P, Code: 0111, Frequency: 1
+Character: R, Code: 1000, Frequency: 1
+Character: I, Code: 1001, Frequency: 1
+Character: N, Code: 1010, Frequency: 1
+Character: G, Code: 1011, Frequency: 1
+Character: 2, Code: 1100, Frequency: 3
+
+Decompressed message: COSC 3360 SPRING 2022
